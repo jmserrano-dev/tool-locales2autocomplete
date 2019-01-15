@@ -1,0 +1,20 @@
+{
+  "author": "José Manuel Serrano Mármol",
+  "name": "@jmserrano/json2dts",
+  "version": "1.0.2",
+  "description": "Convert json (i18n) in Typescript declaration (d.ts)",
+  "main": "index.js",
+  "bin": {
+    "json2dts": "./cli.js"
+  },
+  "keywords": [
+    "i18n",
+    "dts",
+    "typescript"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "command-line-args": "^5.0.2",
+    "command-line-usage": "^5.0.5"
+  }
+}

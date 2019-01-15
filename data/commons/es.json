@@ -1,0 +1,13 @@
+{
+  "title": "My title",
+  "form": {
+    "title": "My form",
+	"buttons": {
+	  "send": "Enviar",
+	  "cancel": "Cancelar",
+	  "others": {
+		"other": "<>"
+	  }
+	}
+  }
+}
