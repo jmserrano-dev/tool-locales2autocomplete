@@ -24,7 +24,7 @@
   "license": "ISC",
   "scripts": {
     "build": "tsc",
-    "test": "mocha -r ts-node/register tests/*.spec.ts"
+    "test": "mocha -r ts-node/register tests/*.spec.ts --reporter mocha-junit-reporter"
   },
   "dependencies": {
     "command-line-args": "^5.0.2",
@@ -38,6 +38,7 @@
     "@types/node": "^10.12.18",
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
+    "mocha-junit-reporter": "^1.18.0",
     "ts-node": "^7.0.1",
     "typescript": "^3.2.4"
   }
