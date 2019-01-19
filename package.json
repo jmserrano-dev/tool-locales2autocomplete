@@ -1,20 +1,44 @@
 {
   "author": "José Manuel Serrano Mármol",
   "name": "@jmserrano/json2dts",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Convert json (i18n) in Typescript declaration (d.ts)",
-  "main": "index.js",
-  "bin": {
-    "json2dts": "./cli.js"
+  "readme": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jmserrano-dev/json2dts.git"
   },
+  "main": "dist/index.js",
+  "bin": {
+    "json2dts": "dist/cli.js"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
   "keywords": [
     "i18n",
     "dts",
     "typescript"
   ],
   "license": "ISC",
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha -r ts-node/register tests/*.spec.ts"
+  },
   "dependencies": {
     "command-line-args": "^5.0.2",
     "command-line-usage": "^5.0.5"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/command-line-args": "^5.0.0",
+    "@types/command-line-usage": "^5.0.1",
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.18",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.4"
   }
 }
