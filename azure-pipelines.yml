@@ -29,3 +29,16 @@ steps:
   inputs:
     testRunner: JUnit
     testResultsFiles: 'test-results.xml'
+
+- script: |
+    npm pack
+  displayName: 'Create package'
+
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(System.DefaultWorkingDirectory)'
+    Contents: |
+      jmserrano-json2dts-*.tgz
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
+- task: PublishBuildArtifacts@1
