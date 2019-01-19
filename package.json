@@ -1,7 +1,7 @@
 {
   "author": "José Manuel Serrano Mármol",
   "name": "@jmserrano/json2dts",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Convert json (i18n) in Typescript declaration (d.ts)",
   "readme": "README.md",
   "repository": {
