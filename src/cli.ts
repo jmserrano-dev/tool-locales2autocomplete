@@ -7,8 +7,6 @@ import
     Converter
 }  from './libs'
 
-const { input, output } = Args.getOptionsFromCommandLine();
-
 async function start(): Promise<void> {
     const isDirectory = await File.isDirectory(input);
     const declaration = (isDirectory)
@@ -16,5 +14,7 @@ async function start(): Promise<void> {
         : await Converter.getDeclarationFromFile(input, "translations");
     File.writeFile(output, declaration);
 };
+
+const { input, output } = Args.getOptionsFromCommandLine();
 
 start();

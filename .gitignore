@@ -1,6 +1,10 @@
 # Compile results
 dist
 
+# Tests output
+test-results.xml
+tests/output/*
+
 # Logs
 logs
 *.log
