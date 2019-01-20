@@ -5,11 +5,30 @@ import commandLineUsage from 'command-line-usage';
 
 interface ICommandLineOptions {
     input: string;
-    output: string
+    output: string;
 }
 
 class Args {
-    private static getUsage() {
+    public static getOptionsFromCommandLine(): ICommandLineOptions  {
+        const optionDefinitions = [
+            { name: 'input', alias: 'i', type: String },
+            { name: 'output', alias: 'o', type: String },
+            { name: 'help', alias:'h', type: String }
+        ];
+
+        const options = commandLineArgs(optionDefinitions);
+        const {input, output, help} = options;
+
+        if(help || (input === undefined || output === undefined)) {
+            // tslint:disable-next-line:no-console
+            console.log(Args.getUsage());
+            process.exit(0);
+        }
+
+        return { input, output };
+    }
+
+    private static getUsage(): string {
         const sections =
         [
             {
@@ -42,24 +61,6 @@ class Args {
         ];
 
         return commandLineUsage(sections);
-    }
-    
-    public static getOptionsFromCommandLine(): ICommandLineOptions  {
-        const optionDefinitions = [
-            { name: 'input', alias: 'i', type: String },
-            { name: 'output', alias: 'o', type: String },
-            { name: 'help', alias:'h', type: String }
-        ];
-    
-        const options = commandLineArgs(optionDefinitions);
-        const {input, output, help} = options;
-    
-        if(help || (input == undefined || output == undefined)) {
-            console.log(Args.getUsage());
-            process.exit(0);
-        }
-    
-        return { input, output };
     }
 }
 

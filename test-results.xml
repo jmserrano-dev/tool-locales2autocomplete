@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="0.001" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2019-01-19T21:49:48" tests="0" failures="0" time="0">
-  </testsuite>
-  <testsuite name="Hello function" timestamp="2019-01-19T21:49:48" tests="1" file="D:\Dev\Source\json2dts.git\tests\cli.spec.ts" failures="0" time="0.001">
-    <testcase name="Hello function should return hello world" time="0.001" classname="should return hello world">
-    </testcase>
-  </testsuite>
-</testsuites>
