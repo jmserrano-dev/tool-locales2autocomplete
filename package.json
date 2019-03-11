@@ -1,16 +1,16 @@
 {
   "author": "José Manuel Serrano Mármol",
-  "name": "@jmserrano/json2dts",
-  "version": "1.0.4",
+  "name": "@jmserrano/locales2autocomplete",
+  "version": "1.0.0",
   "description": "Convert json (i18n) in Typescript declaration (d.ts)",
   "readme": "README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jmserrano-dev/json2dts.git"
+    "url": "https://github.com/jmserrano-dev/locales2autocomplete.git"
   },
   "main": "dist/index.js",
   "bin": {
-    "json2dts": "dist/cli.js"
+    "locales2autocomplete": "dist/cli.js"
   },
   "files": [
     "src",
