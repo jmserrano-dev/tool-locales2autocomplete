@@ -1,5 +1,5 @@
-# JSON2DTS
+# LOCALES2AUTOCOMPLETE
 
-## How to add linter for typescript?
+## Description
 
-TODO...
+This tool generates vscode & typescript declarations from i18n locales
